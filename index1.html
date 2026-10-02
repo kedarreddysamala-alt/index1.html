@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedar Reddy Samala</title>
+    <meta name="description" content="Kedar Reddy Samala - Finance student at Rutgers Business School">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Fraunces', 'Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        body { background: #f8fafc; color: #0f172a; }
+    </style>
+</head>
+<body class="font-sans antialiased bg-slate-50 text-slate-900 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#top" class="font-display text-xl font-semibold text-slate-950">Kedar Reddy Samala</a>
+            <div class="flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#about" class="hidden sm:inline hover:text-red-700">About</a>
+                <a href="#experience" class="hover:text-red-700">Experience</a>
+                <a href="#projects" class="hidden sm:inline hover:text-red-700">Projects</a>
+                <a href="#contact" class="hover:text-red-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header id="top" class="bg-white border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col-reverse md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <span class="inline-block text-xs font-bold uppercase tracking-widest text-rose-700 bg-rose-100 px-3 py-1 rounded-full mb-6">Finance · Rutgers Business School</span>
+                <h1 class="font-display text-4xl md:text-6xl font-semibold text-slate-950 leading-tight mb-6">Hi, I'm Kedar.</h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-xl mb-8">
+                    Finance student at Rutgers Business School with internship experience in corporate credit analysis at J.P. Morgan Chase and FinTech market strategy at CBRE.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#experience" class="bg-red-700 hover:bg-red-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors">View Experience</a>
+                    <a href="https://www.linkedin.com/in/kedar-reddy-samala-343a7b347" target="_blank" rel="noopener" class="border border-slate-300 hover:border-red-700 hover:text-red-700 font-semibold px-6 py-3 rounded-lg transition-colors">LinkedIn</a>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <!-- Headshot: loads the photo named "headshot" from your repo (jpg, jpeg, png or webp). -->
+                <div class="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden ring-4 ring-rose-100 shadow-xl bg-gradient-to-br from-red-700 to-slate-900 flex items-center justify-center">
+                    <span class="font-display text-6xl text-white">KS</span>
+                    <img id="headshot" src="./headshot.jpg" alt="Kedar Reddy Samala" class="absolute inset-0 w-full h-full object-cover object-top">
+                </div>
+                <script>
+                    (function () {
+                        var img = document.getElementById('headshot');
+                        var names = ['headshot.jpg', 'headshot.jpeg', 'headshot.png', 'headshot.webp',
+                                     'headshot.JPG', 'headshot.JPEG', 'headshot.PNG', 'Headshot.jpg', 'Headshot.png'];
+                        var i = 0;
+                        img.onerror = function () {
+                            i++;
+                            if (i < names.length) { img.src = './' + names[i]; }
+                            else { img.remove(); } // no photo found: show initials
+                        };
+                    })();
+                </script>
+            </div>
+        </div>
+
+        <!-- Highlights -->
+        <div class="max-w-6xl mx-auto px-6 pb-12">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                    <p class="text-3xl font-bold text-slate-950">3.7</p>
+                    <p class="text-sm text-slate-500">GPA · Dean's List</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                    <p class="text-3xl font-bold text-slate-950">2028</p>
+                    <p class="text-sm text-slate-500">Expected graduation</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                    <p class="text-3xl font-bold text-slate-950">2</p>
+                    <p class="text-sm text-slate-500">Finance internships</p>
+                </div>
+                <div class="bg-slate-50 border border-slate-200 rounded-xl p-5">
+                    <p class="text-3xl font-bold text-slate-950">100+</p>
+                    <p class="text-sm text-slate-500">People served volunteering</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <h2 class="font-display text-3xl font-semibold text-slate-950">About Me</h2>
+            <div class="md:col-span-2 space-y-4 text-slate-600 leading-relaxed">
+                <p>I'm pursuing a <strong class="text-slate-900">Bachelor of Science in Finance</strong> at Rutgers Business School in New Brunswick, NJ. My coursework includes Corporate Finance, Financial Accounting, and Investments.</p>
+                <p>My internships have covered both sides of finance: assessing corporate credit risk through financial statement and variance analysis, and using partner data to shape client acquisition strategy.</p>
+                <p>Outside the classroom I volunteer with the Red Cross and Habitat for Humanity, and I play basketball at Rutgers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="font-display text-3xl font-semibold text-slate-950 mb-12">Experience</h2>
+
+            <div class="space-y-6">
+                <!-- JPMC -->
+                <div class="border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-950">J.P. Morgan Chase</h3>
+                            <p class="text-red-700 font-medium">Financial Analyst Intern</p>
+                        </div>
+                        <div class="text-sm text-slate-500 md:text-right">
+                            <p>Aug 2022 – Oct 2022</p>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                        <li>Conducted financial statement analysis to assess corporate credit risk.</li>
+                        <li>Performed variance analysis of actual vs. forecasted results for business units.</li>
+                        <li>Evaluated industry risk factors, improving the accuracy of corporate credit reviews.</li>
+                    </ul>
+                </div>
+
+                <!-- CBRE -->
+                <div class="border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-950">CBRE</h3>
+                            <p class="text-red-700 font-medium">Marketing Intern</p>
+                        </div>
+                        <div class="text-sm text-slate-500 md:text-right">
+                            <p>Jul 2023 – Sep 2023</p>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                        <li>Developed a structured prospecting plan targeting the FinTech sector, improving pipeline efficiency.</li>
+                        <li>Led a project team to design engagement strategies for high-value FinTech leads.</li>
+                        <li>Analyzed partner data to identify growth-stage FinTechs as the main drivers of client acquisition.</li>
+                    </ul>
+                </div>
+
+                <!-- Nutrify -->
+                <div class="border border-slate-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold text-slate-950">Nutrify the Needful</h3>
+                            <p class="text-red-700 font-medium">Core Member · Leadership</p>
+                        </div>
+                        <div class="text-sm text-slate-500 md:text-right">
+                            <p>Jul 2022 – Sep 2023</p>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                    <ul class="list-disc pl-5 space-y-2 text-slate-600">
+                        <li>Organized food stalls outside hospitals serving healthy meals to 100+ underserved people.</li>
+                        <li>Recruited and managed 10+ volunteers through outreach campaigns.</li>
+                        <li>Coordinated awareness events and guest speakers to expand community impact.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Highlights -->
+    <section id="projects" class="py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="font-display text-3xl font-semibold text-slate-950 mb-12">Projects &amp; Certifications</h2>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="group border border-slate-100 rounded-2xl p-8 bg-white flex flex-col gap-5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-widest text-rose-700 bg-rose-100 px-3 py-1 rounded-full">Credit</span>
+                        <span class="text-slate-400 text-xs">Analysis</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-slate-950">Corporate Credit Review</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-grow">Assessed corporate borrowers using financial statements, industry risk factors, and actual-vs-forecast variance analysis.</p>
+                    <div class="h-px bg-slate-100 w-full mt-auto"></div>
+                    <span class="text-xs text-slate-500">J.P. Morgan Chase</span>
+                </div>
+
+                <div class="group border border-slate-100 rounded-2xl p-8 bg-white flex flex-col gap-5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-widest text-rose-700 bg-rose-100 px-3 py-1 rounded-full">Strategy</span>
+                        <span class="text-slate-400 text-xs">Data</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-slate-950">FinTech Prospecting Plan</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-grow">Built a prospecting plan and engagement strategy for high-value FinTech leads, backed by analysis of partner data.</p>
+                    <div class="h-px bg-slate-100 w-full mt-auto"></div>
+                    <span class="text-xs text-slate-500">CBRE</span>
+                </div>
+
+                <div class="group border border-slate-100 rounded-2xl p-8 bg-white flex flex-col gap-5 shadow-sm hover:shadow-xl transition-shadow duration-300">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-widest text-rose-700 bg-rose-100 px-3 py-1 rounded-full">Certification</span>
+                        <span class="text-slate-400 text-xs">Virtual</span>
+                    </div>
+                    <h4 class="text-xl font-semibold text-slate-950">Goldman Sachs Financial Analyst</h4>
+                    <p class="text-slate-600 text-sm leading-relaxed flex-grow">Completed the Goldman Sachs Financial Analyst Intern virtual experience program.</p>
+                    <div class="h-px bg-slate-100 w-full mt-auto"></div>
+                    <span class="text-xs text-slate-500">Virtual Experience Program</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Skills</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">Financial Modeling</span>
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">Excel</span>
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">SQL</span>
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">HTML</span>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Coursework</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">Corporate Finance</span>
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">Financial Accounting</span>
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">Investments</span>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold uppercase tracking-widest text-slate-500 mb-4">Languages</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">English</span>
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">Hindi</span>
+                    <span class="bg-slate-100 text-slate-700 text-sm px-3 py-1 rounded-md">Telugu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-slate-950 text-slate-300 py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 text-sm text-center">
+            <p class="font-semibold text-white mb-2">Kedar Reddy Samala • Rutgers Business School Student</p>
+            <p>Connect with me for internships, collaborations, or coffee chats.</p>
+            <p class="mt-2 select-all">ks2085@scarletmail.rutgers.edu</p>
+            <div class="flex justify-center gap-6 mt-6">
+                <a href="https://www.linkedin.com/in/kedar-reddy-samala-343a7b347" target="_blank" rel="noopener" class="hover:text-white">LinkedIn</a>
+                <a href="mailto:ks2085@scarletmail.rutgers.edu" class="hover:text-white">Email</a>
+                <a href="https://github.com/kedarreddysamala-alt" target="_blank" rel="noopener" class="hover:text-white">GitHub</a>
+            </div>
+            <p class="mt-8 text-slate-500 text-xs">&copy; 2026 Kedar Reddy Samala. Built with Tailwind CSS via CDN. Hosted on GitHub Pages.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
